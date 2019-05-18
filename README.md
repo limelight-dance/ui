@@ -4,6 +4,7 @@ Powered by React, Sass and Webpack
 ### Requirements
 - git
 - yarn
+- node.js
 
 ### Installing
 Clone this repo
