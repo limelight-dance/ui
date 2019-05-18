@@ -1,11 +1,11 @@
 # Limelight Frontend
 Powered by React, Sass and Webpack
 
-## Requirements
+### Requirements
 - git
 - yarn
 
-## Installing
+### Installing
 Clone this repo
 ```
 git clone https://github.com/limelight-dance/ui.git
@@ -16,7 +16,7 @@ Install packages (do not use `npm install`)
 ```
 yarn install
 ```
-## Running
+### Running
 ```
 npm start
 ```
