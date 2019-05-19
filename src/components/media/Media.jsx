@@ -5,8 +5,6 @@ class Media extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <p>Media</p>
       </div>
     )
   }

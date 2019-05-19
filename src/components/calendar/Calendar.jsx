@@ -5,8 +5,6 @@ class Calendar extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <p>Calendar</p>
       </div>
     )
   }

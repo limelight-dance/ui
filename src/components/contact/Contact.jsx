@@ -49,9 +49,7 @@ class Contact extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <br></br>
-
+        <br/><br/><br/><br/><br/>
         <input onChange={this.updateFirstName} placeholder="First Name" />&nbsp;
         <input onChange={this.updateLastName} placeholder="Last Name" />&nbsp;
         <button onClick={this.addMember}>Add member</button>

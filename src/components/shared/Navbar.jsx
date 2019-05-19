@@ -6,6 +6,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
+        <div className="background"></div>
         <div className="links">
           <Link to="/">ABOUT</Link>&nbsp;
           <Link to="/media">MEDIA</Link>&nbsp;
