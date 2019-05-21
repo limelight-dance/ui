@@ -1,10 +1,7 @@
 {
-  "name": "ui",
-  "homepage": "https://limelight-dance.github.io/ui",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
-    "predeploy": "webpack --mode production",
-    "deploy": "gh-pages -d dist"
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -24,7 +21,6 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"

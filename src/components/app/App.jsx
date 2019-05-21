@@ -10,7 +10,7 @@ import styles from './App.sass'
 
 function App() {
   return (
-    <Router basename="/ui">
+    <Router>
       <div>
         <Navbar />
         <Route path="/" exact component={ About } />
