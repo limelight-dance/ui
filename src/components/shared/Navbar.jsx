@@ -9,7 +9,7 @@ class Navbar extends Component {
         <div className="background"></div>
         <Link to="/"><img src={ require('../../static/logo-white.png') } /></Link>&nbsp;
         <div className="links">
-          <Link to="/media">MEDI{ process.env.PUBLIC_URL }</Link>&nbsp;
+          <Link to="/media">MEDIA</Link>&nbsp;
           <Link to="/calendar">CALENDAR</Link>&nbsp;
           <Link to="/sponsors">SPONSORS</Link>&nbsp;
           <Link to="/join">JOIN</Link>&nbsp;

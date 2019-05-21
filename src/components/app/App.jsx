@@ -10,7 +10,7 @@ import styles from './App.sass'
 
 function App() {
   return (
-    <Router basename={ process.env.PUBLIC_URL }>
+    <Router basename="limelight-dance.github.io/ui">
       <div>
         <Navbar />
         <Route path="/" exact component={ About } />
