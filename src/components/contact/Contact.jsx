@@ -42,7 +42,7 @@ class Contact extends Component {
       })
     })
     this.setState({
-      members: [...this.state.members, {first_name: firstName, last_name: lastName}]
+      members: [...this.state.members, { first_name: firstName, last_name: lastName }]
     })
   }
 
@@ -50,13 +50,13 @@ class Contact extends Component {
     return (
       <div>
         <br/><br/><br/><br/><br/>
-        <input onChange={this.updateFirstName} placeholder="First Name" />&nbsp;
-        <input onChange={this.updateLastName} placeholder="Last Name" />&nbsp;
-        <button onClick={this.addMember}>Add member</button>
+        <input onChange={ this.updateFirstName } placeholder="First Name" />&nbsp;
+        <input onChange={ this.updateLastName } placeholder="Last Name" />&nbsp;
+        <button onClick={ this.addMember }>Add member</button>
 
         <p>Members:</p>
         { this.state.members.map((member, index) => (
-          <p key={index}>{member.first_name} {member.last_name}</p>
+          <p key={ index }>{ member.first_name } { member.last_name }</p>
         ))}
       </div>
     )

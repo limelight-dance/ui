@@ -7,7 +7,7 @@ class Navbar extends Component {
     return (
       <div className="navbar">
         <div className="background"></div>
-        <Link to="/"><img src={require('../../static/logo-white.png')} /></Link>&nbsp;
+        <Link to="/"><img src={ require('../../static/logo-white.png') } /></Link>&nbsp;
         <div className="links">
           <Link to="/media">MEDIA</Link>&nbsp;
           <Link to="/calendar">CALENDAR</Link>&nbsp;

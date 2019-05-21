@@ -10,7 +10,7 @@ import styles from './App.sass'
 
 function App() {
   return (
-    <Router>
+    <Router basename={ process.env.PUBLIC_URL }>
       <div>
         <Navbar />
         <Route path="/" exact component={ About } />

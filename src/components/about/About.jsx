@@ -7,7 +7,7 @@ class About extends Component {
     return (
       <div className="about">
         <div className="welcome">
-          <img src={require('../../static/logo-white.png')}/>
+          <img src={ require('../../static/logo-white.png') }/>
         </div>
         <div className="bio">
           <h1>Limelight Dance Crew</h1>
