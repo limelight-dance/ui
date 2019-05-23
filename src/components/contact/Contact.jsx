@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Navbar from '../shared/Navbar.jsx'
 
 class Contact extends Component {
   constructor(props) {
@@ -12,7 +11,7 @@ class Contact extends Component {
   }
 
   componentDidMount() {
-    fetch('http://127.0.0.1:8000/members/')
+    fetch('https://limelight-dance-core.herokuapp.com/')
     .then(res => res.json())
     .then(data => this.setState({
       members: data
@@ -34,7 +33,7 @@ class Contact extends Component {
   addMember = () => {
     let firstName = this.state.firstName
     let lastName = this.state.lastName
-    fetch('http://127.0.0.1:8000/members/', {
+    fetch('https://limelight-dance-core.herokuapp.com/', {
       method: 'POST',
       body: JSON.stringify({
         first_name: firstName,

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Navbar from '../shared/Navbar.jsx'
 import styles from './About.sass'
 
 class About extends Component {
