@@ -17,6 +17,10 @@ Install packages (do not use `npm install`)
 ```
 yarn install
 ```
+Create .env
+```
+cp .env.example .env
+```
 ### Running
 ```
 npm start
