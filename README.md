@@ -22,7 +22,7 @@ yarn install
 npm start
 ```
 ### Deploying
-```
+```sh
 # You only need to run the following line once
 heroku git:remote -a limelight-dance-ui
 
