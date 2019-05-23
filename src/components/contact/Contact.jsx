@@ -11,7 +11,7 @@ class Contact extends Component {
   }
 
   componentDidMount() {
-    fetch('https://limelight-dance-core.herokuapp.com/')
+    fetch(process.env.CORE_URL)
     .then(res => res.json())
     .then(data => this.setState({
       members: data
@@ -33,7 +33,7 @@ class Contact extends Component {
   addMember = () => {
     let firstName = this.state.firstName
     let lastName = this.state.lastName
-    fetch('https://limelight-dance-core.herokuapp.com/', {
+    fetch(process.env.CORE_URL, {
       method: 'POST',
       body: JSON.stringify({
         first_name: firstName,
