@@ -6,14 +6,12 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
-        <div className="background"></div>
-        <Link to="/"><img src={ require('../../static/logo-white.png') } /></Link>&nbsp;
+        <Link to="/"><img src={ require('../../static/logo.png') } /></Link>&nbsp;
         <div className="links">
-          <Link to="/media">MEDIA</Link>&nbsp;
-          <Link to="/calendar">CALENDAR</Link>&nbsp;
-          <Link to="/sponsors">SPONSORS</Link>&nbsp;
-          <Link to="/join">JOIN</Link>&nbsp;
-          <Link to="/contact">CONTACT</Link>
+          <Link to="/">About</Link>&nbsp;
+          <Link to="/media">Media</Link>&nbsp;
+          <Link to="/crew">Crew</Link>&nbsp;
+          <Link to="/contact">Contact</Link>
         </div>
       </div>
     )

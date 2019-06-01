@@ -47,7 +47,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="test">
+      <div className="single-column">
         <h1>Contact</h1>
         <input onChange={ this.updateFirstName } placeholder="First Name" />&nbsp;
         <input onChange={ this.updateLastName } placeholder="Last Name" />&nbsp;

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-class Sponsors extends Component {
+class Crew extends Component {
   render() {
     return (
-      <div className="test">
-        <h1>Sponsors</h1>
+      <div className="single-column">
+        <h1>Meet our Crew</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis hendrerit dolor magna eget est. Maecenas pharetra convallis posuere morbi leo urna molestie. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Lacus sed viverra tellus in. Aliquet enim tortor at auctor urna nunc. Urna duis convallis convallis tellus id interdum velit laoreet id. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Aliquam sem fringilla ut morbi. Non sodales neque sodales ut etiam sit amet. Velit dignissim sodales ut eu sem integer vitae justo eget.
           <br/><br/>
@@ -17,4 +17,4 @@ class Sponsors extends Component {
   }
 }
 
-export default Sponsors
+export default Crew
