@@ -13,7 +13,7 @@ git clone https://github.com/limelight-dance/ui.git
 
 cd ui
 ```
-Install packages (do not use `npm install`)
+Install packages (do **NOT** use `npm install`)
 ```
 yarn install
 ```
