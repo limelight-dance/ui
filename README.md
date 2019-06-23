@@ -18,7 +18,7 @@ Install packages (do **NOT** use `npm install`)
 ```
 yarn install
 ```
-Create .env
+Create .env and populate mandatory fields
 ```
 cp .env.example .env
 ```
