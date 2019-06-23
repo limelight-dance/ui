@@ -11,7 +11,7 @@ class Media extends Component {
   }
 
   componentDidMount() {
-    fetch('https://www.googleapis.com/youtube/v3/playlistItems?key=AIzaSyDRRQQA8xJh1WlfzWe1zP3xwpOXclDY3is&part=snippet&playlistId=PLyUonNA3oh0L4ep7RSOFMqabil1-eFPlT&maxResults=20')
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${process.env.YOUTUBE_API}&part=snippet&playlistId=${process.env.PLAYLIST_ID}&maxResults=20`)
     .then(res => res.json())
     .then(data => {
       this.setState({
@@ -24,6 +24,8 @@ class Media extends Component {
     this.setState({
       promo: e.target.parentElement.getAttribute('index')
     })
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
   }
 
   render() {
