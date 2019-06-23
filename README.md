@@ -28,9 +28,9 @@ npm start
 ```
 ### Deploying
 ```sh
-# You only need to run the following once
 heroku login
 heroku git:remote -a limelight-dance-ui
+# You only need to run the following once
 
 git push heroku master
 ```
