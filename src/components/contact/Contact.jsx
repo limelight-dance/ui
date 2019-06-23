@@ -4,59 +4,36 @@ class Contact extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      firstName: '',
-      lastName: '',
-      members: []
+      email: '',
+      message: ''
     }
   }
 
   componentDidMount() {
-    fetch(process.env.CORE_URL)
-    .then(res => res.json())
-    .then(data => this.setState({
-      members: data
-    }))
   }
 
-  updateFirstName = evt => {
+  updateEmail = evt => {
     this.setState({
-      firstName: evt.target.value
+      email: evt.target.value
     })
   }
 
-  updateLastName = evt => {
+  updateMessage = evt => {
     this.setState({
-      lastName: evt.target.value
+      message: evt.target.value
     })
   }
 
-  addMember = () => {
-    let firstName = this.state.firstName
-    let lastName = this.state.lastName
-    fetch(process.env.CORE_URL, {
-      method: 'POST',
-      body: JSON.stringify({
-        first_name: firstName,
-        last_name: lastName
-      })
-    })
-    this.setState({
-      members: [...this.state.members, { first_name: firstName, last_name: lastName }]
-    })
+  send = () => {
   }
 
   render() {
     return (
       <div className="single-column">
         <h1>Contact</h1>
-        <input onChange={ this.updateFirstName } placeholder="First Name" />&nbsp;
-        <input onChange={ this.updateLastName } placeholder="Last Name" />&nbsp;
-        <button onClick={ this.addMember }>Add member</button>
-
-        <p>Members:</p>
-        { this.state.members.map((member, index) => (
-          <p key={ index }>{ member.first_name } { member.last_name }</p>
-        ))}
+        <input onChange={ this.updateEmail } placeholder="Email" />&nbsp;
+        <input onChange={ this.updateMessage } placeholder="Message" />&nbsp;
+        <button onClick={ this.send }>Send</button>
       </div>
     )
   }

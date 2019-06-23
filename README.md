@@ -3,6 +3,7 @@ Powered by React, Sass and Webpack
 
 ### Requirements
 - git
+- heroku
 - yarn
 - node.js
 
@@ -27,7 +28,8 @@ npm start
 ```
 ### Deploying
 ```sh
-# You only need to run the following line once
+# You only need to run the following once
+heroku login
 heroku git:remote -a limelight-dance-ui
 
 git push heroku master

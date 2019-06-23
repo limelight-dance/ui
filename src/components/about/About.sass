@@ -1,11 +1,12 @@
 .about
-  margin: 0
+  margin-bottom: 120px
 
   .welcome
     display: flex
     width: 100%
     height: 100vh
     background-image: url('../../static/main.jpg')
+    background-position: center
     background-size: cover
 
     .img
@@ -27,13 +28,16 @@
 
   .banner
     img
-      width: 100%
+      min-width: 100%
 
   .multi-column
+    border-top: 1px solid #eee
+    padding-top: 30px
     display: flex
     flex-wrap: wrap
     max-width: 1300px
     justify-content: center
+    margin: auto
 
     .column
       max-width: 300px
@@ -41,4 +45,4 @@
       margin-bottom: 0
 
       a
-        color: #6af
+        color: #3bf
