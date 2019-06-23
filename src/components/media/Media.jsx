@@ -29,16 +29,13 @@ class Media extends Component {
   render() {
     return (
       <div className="media">
-        <div className="promo">
-          <div className="iframe">
-            { this.state.videos[this.state.promo] ?
-              <div>
-                <iframe width="960" height="540" src={`https://www.youtube.com/embed/${this.state.videos[this.state.promo].resourceId.videoId}?modestbranding=1`} frameBorder="0"></iframe>
-                <p>{ this.state.videos[this.state.promo].title }</p>
-              </div>
-            : null}
+        { this.state.videos[this.state.promo] ?
+          <div className="promo">
+            <div className="iframe">
+              <iframe width="1070" height="602" src={`https://www.youtube.com/embed/${this.state.videos[this.state.promo].resourceId.videoId}?modestbranding=1`} frameBorder="0" allowFullScreen></iframe>
+            </div>
           </div>
-        </div>
+        : null}
         <div className="videos">
           { this.state.videos.map((video, index) => (
             <div key={index} index={index} className="thumbnail" onClick={(e) => this.switch(e)}>

@@ -8,10 +8,22 @@
     background-image: url('../../static/main.jpg')
     background-size: cover
 
-    img
-      width: 500px
+    .img
+      max-width: 500px
+      padding: 0 50px
       margin: auto
       margin-top: 200px
+
+      img
+        width: 100%
+
+  .single-column
+    max-width: 800px
+    padding: 0 50px
+    margin: 120px auto
+
+    p
+      text-align: justify
 
   .banner
     img
@@ -19,11 +31,14 @@
 
   .multi-column
     display: flex
-    width: 1300px
-    margin: auto
+    flex-wrap: wrap
+    max-width: 1300px
+    justify-content: center
 
     .column
+      max-width: 300px
       margin: 50px
+      margin-bottom: 0
 
       a
         color: #6af

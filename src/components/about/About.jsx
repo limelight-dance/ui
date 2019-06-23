@@ -6,12 +6,12 @@ class About extends Component {
     return (
       <div className="about">
         <div className="welcome">
-          <img src={ require('../../static/logo-white.png') }/>
+          <div className="img"><img src={ require('../../static/logo-white.png') }/></div>
         </div>
         <div className="single-column">
           <h1>Limelight Dance Crew</h1>
           <p>
-            Limelight Dance Club was founded on October 10th, 2015 by a group of talented dancers from the KW region of Ontario, Canada. We are a student-run, non-profit dance club. We make dance cover videos and offer free weekly dance tutorials. We also perform at various events, including Toronto K-pop Concert, Waterloo Chinese New Year, Annual Community All Style Battle, Fashion for Change Holiday Showcase and more. In 2017, we won 1st place at the Toronto K-pop World Festival hosted by the Korean Consulate and UTKSA. And also ranked within the top 10 K-pop cover groups in Canada. We are passionate about what we do, and we are GOOD at what we do. We are a group born to perform under the spotlight. We are Limelight.
+            Limelight Dance Club was founded on October 10th, 2015 by a group of talented dancers from the KW region of Ontario, Canada. We are a student-run, non-profit dance club. We make dance cover videos and offer free weekly dance tutorials. We also perform at various events, including Toronto K-pop Concert, Waterloo Chinese New Year, Annual Community All Style Battle, Fashion for Change Holiday Showcase and more. In 2017, we won 1st place at the Toronto K-pop World Festival hosted by the Korean Consulate and UTKSA. And also ranked within the top 10 K-pop cover groups in Canada. We are passionate about what we do, and we are GOOD at what we do. We are a group born to perform under the spotlight. We are number one.
           </p>
         </div>
         <div className="banner">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from './Crew.sass'
 
 class Crew extends Component {
   render() {
