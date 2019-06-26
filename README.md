@@ -16,7 +16,7 @@ cd ui
 ```
 Install packages (do **NOT** use `npm install`)
 ```
-yarn install
+yarn
 ```
 Create .env and populate mandatory fields
 ```
