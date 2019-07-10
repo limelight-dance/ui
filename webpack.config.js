@@ -6,25 +6,25 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: { loader: 'babel-loader' }
+        use: { loader: 'babel-loader' },
       },
       {
         test: /\.html$/,
-        use: { loader: 'html-loader' }
+        use: { loader: 'html-loader' },
       },
       {
         test: /\.sass$/,
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' }
-        ]
+          { loader: 'sass-loader' },
+        ],
       },
       {
         test: /\.(ttf|jpg|png)$/,
-        use: { loader: 'file-loader' }
-      }
-    ]
+        use: { loader: 'file-loader' },
+      },
+    ],
   },
   devServer: {
     host: '0.0.0.0',
@@ -34,7 +34,7 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      filename: './index.html'
-    })
-  ]
+      filename: './index.html',
+    }),
+  ],
 }

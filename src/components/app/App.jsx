@@ -7,24 +7,20 @@ import Crew from '../crew/Crew.jsx'
 import Contact from '../contact/Contact.jsx'
 import NotFound from '../not_found/NotFound.jsx'
 import Footer from '../shared/Footer.jsx'
-import styles from './App.sass'
+import './App.sass'
 
-function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={ About } />
-          <Route path="/media" component={ Media } />
-          <Route path="/crew" component={ Crew } />
-          <Route path="/contact" component={ Contact } />
-          <Route component={ NotFound } />
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
-  )
-}
-
-export default App
+export default () => (
+  <Router>
+    <div>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={About} />
+        <Route path="/media" component={Media} />
+        <Route path="/crew" component={Crew} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
+      <Footer />
+    </div>
+  </Router>
+)

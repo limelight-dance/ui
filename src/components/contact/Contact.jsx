@@ -5,35 +5,40 @@ class Contact extends Component {
     super(props)
     this.state = {
       email: '',
-      message: ''
+      message: '',
     }
   }
 
-  componentDidMount() {
-  }
-
-  updateEmail = evt => {
+  updateEmail(event) {
     this.setState({
-      email: evt.target.value
+      email: event.target.value,
     })
   }
 
-  updateMessage = evt => {
+  updateMessage(event) {
     this.setState({
-      message: evt.target.value
+      message: event.target.value,
     })
   }
 
-  send = () => {
+  send(event) {
+    event.preventDefault()
+    const { email, message } = this.state
+    console.log(email)
+    console.log(message)
   }
 
   render() {
     return (
       <div className="single-column">
         <h1>Contact</h1>
-        <input onChange={ this.updateEmail } placeholder="Email" />&nbsp;
-        <input onChange={ this.updateMessage } placeholder="Message" />&nbsp;
-        <button onClick={ this.send }>Send</button>
+        <form onSubmit={this.send}>
+          <input onChange={this.updateEmail} placeholder="Email" />
+          &nbsp;
+          <input onChange={this.updateMessage} placeholder="Message" />
+          &nbsp;
+          <button type="submit">Send</button>
+        </form>
       </div>
     )
   }
