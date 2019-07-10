@@ -17,10 +17,12 @@ class Media extends Component {
       playlistId: process.env.PLAYLIST_ID,
       maxResults: 20,
     }
+
     const url = 'https://www.googleapis.com/youtube/v3/playlistItems?'
       .concat(Object.keys(params)
         .map(param => `${param}=${params[param]}`)
         .join('&'))
+
     fetch(url)
       .then(res => res.json())
       .then((data) => {
@@ -30,9 +32,9 @@ class Media extends Component {
       })
   }
 
-  switch(e) {
+  switch(event) {
     this.setState({
-      promo: e.target.parentElement.getAttribute('index'),
+      promo: event.target.parentElement.getAttribute('index'),
     })
     document.documentElement.scrollTop = 0
     document.body.scrollTop = 0
@@ -46,10 +48,10 @@ class Media extends Component {
           <div className="promo">
             <div className="iframe">
               <iframe
+                src={`https://www.youtube.com/embed/${videos[promo].resourceId.videoId}?modestbranding=1`}
                 title={videos[promo].title}
                 width="1070"
                 height="602"
-                src={`https://www.youtube.com/embed/${videos[promo].resourceId.videoId}?modestbranding=1`}
                 frameBorder="0"
                 allowFullScreen
               />
@@ -59,14 +61,12 @@ class Media extends Component {
         <div className="videos">
           { videos.map((video, index) => (
             <div
-              key={video.title}
-              role="button"
-              tabIndex={index + 1}
-              index={index}
               className="thumbnail"
-              onKeyPress={e => this.switch(e)}
+              key={video.title}
+              index={index}
+              onClick={event => this.switch(event)}
             >
-              <img width="330" src={video.thumbnails.medium.url} alt="thumbnail" />
+              <img src={video.thumbnails.medium.url} width="330" alt="thumbnail" />
               <p>{ video.title }</p>
             </div>
           ))}

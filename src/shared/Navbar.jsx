@@ -5,7 +5,7 @@ import './Navbar.sass'
 
 export default () => (
   <div className="navbar">
-    <Link to="/"><img src={require('../../static/logo.png')} alt="logo" /></Link>
+    <Link to="/"><img src={require('../static/logo.png')} alt="logo" /></Link>
     &nbsp;
     <div className="links">
       <Link to="/">About</Link>
