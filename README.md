@@ -20,7 +20,7 @@ yarn
 ```
 Create .env and populate mandatory fields
 ```
-cp .env.example .env
+cp .env.template .env
 ```
 ### Running
 ```
