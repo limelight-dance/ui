@@ -1,8 +1,7 @@
 {
   "license": "ISC",
   "scripts": {
-    "start": "webpack-dev-server --host 0.0.0.0 --disable-host-check",
-    "build": "webpack -p"
+    "start": "webpack-dev-server --host 0.0.0.0 --disable-host-check"
   },
   "dependencies": {
     "@babel/core": "^7.4.4",
