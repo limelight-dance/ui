@@ -42,14 +42,16 @@ class Media extends Component {
 
   render() {
     const { videos, promo } = this.state
+    const promoVideo = videos[promo]
+
     return (
       <div className="media">
-        { videos[promo] ? (
+        { promoVideo ? (
           <div className="promo">
             <div className="iframe">
               <iframe
-                src={`https://www.youtube.com/embed/${videos[promo].resourceId.videoId}?modestbranding=1`}
-                title={videos[promo].title}
+                src={`https://www.youtube.com/embed/${promoVideo.resourceId.videoId}?modestbranding=1`}
+                title={promoVideo.title}
                 width="1070"
                 height="602"
                 frameBorder="0"
@@ -62,7 +64,7 @@ class Media extends Component {
           { videos.map((video, index) => (
             <div
               className="thumbnail"
-              key={video.title}
+              key={video.resourceId.videoId}
               index={index}
               onClick={event => this.switch(event)}
             >
