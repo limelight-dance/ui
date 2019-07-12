@@ -1,35 +1,25 @@
 # Limelight Frontend
-Powered by React, Sass and Webpack
+Limelight website
 
 ### Requirements
-- git
-- heroku
-- yarn
-- node.js
+- Node.js
 
 ### Installing
-Clone this repo
-```
-git clone https://github.com/limelight-dance/ui.git
-
-cd ui
-```
-Install packages (do **NOT** use `npm install`)
-```
-yarn
-```
-Create .env and populate mandatory fields
+Create and populate `.env` file
 ```
 cp .env.template .env
 ```
-### Running
+
+Install packages (do **NOT** use `npm install`) and start
 ```
+yarn
+
 npm start
 ```
+
 ### Deploying
 ```sh
 # You only need to run the following once
-heroku login
 heroku git:remote -a limelight-dance-ui
 
 git push heroku master
