@@ -2,7 +2,7 @@
 Limelight website
 
 ### Requirements
-- node.js
+- Node.js
 
 ### Installing
 Create and populate `.env` file
