@@ -2,9 +2,6 @@
 Limelight website
 
 ### Requirements
-- git
-- heroku
-- yarn
 - node.js
 
 ### Installing
