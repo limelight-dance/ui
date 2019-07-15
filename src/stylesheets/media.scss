@@ -1,39 +1,36 @@
-.media {
+.media-page {
   margin-bottom: 120px;
 
-  .promo {
+  .promo-video {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
 
-    .iframe {
-      margin: auto;
+    .iframe-container {
+      margin: 0 auto 50px auto;
       padding: 120px 20px 0 20px;
-      margin-bottom: 50px;
     }
 
     p {
-      margin: auto;
+      margin: 10px auto 100px auto;
       padding: 0 20px;
-      margin-top: 10px;
       font-size: 24px;
-      margin-bottom: 100px;
     }
   }
 
   .videos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     max-width: 1110px;
     margin: auto;
-    justify-content: center;
 
     .thumbnail {
+      width: 330px;
       margin: 8px;
       padding: 10px;
       border: 1px solid transparent;
       cursor: pointer;
-      width: 330px;
 
       &:hover {
         border: 1px solid #ddd;
@@ -49,15 +46,15 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .media .promo {
+@media screen and (max-width: 768px) {
+  .media .promo-video {
     display: initial;
 
-    .iframe {
-      margin-top: 70px;
+    .iframe-container {
       position: relative;
-      overflow: hidden;
+      margin-top: 70px;
       padding-top: 56.25%;
+      overflow: hidden;
 
       iframe {
         position: absolute;

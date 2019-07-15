@@ -3,7 +3,7 @@
   width: 100%;
   padding: 50px 0;
 
-  .links {
+  div {
     margin: auto;
 
     .youtube {
@@ -22,8 +22,8 @@
     }
 
     a {
-      font-size: 25px;
       margin: 20px;
+      font-size: 25px;
     }
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './Media.scss'
 
 class Media extends Component {
   constructor(props) {
@@ -45,10 +44,10 @@ class Media extends Component {
     const promoVideo = videos[promo]
 
     return (
-      <div className="media">
+      <div className="media-page">
         { promoVideo ? (
-          <div className="promo">
-            <div className="iframe">
+          <div className="promo-video">
+            <div className="iframe-container">
               <iframe
                 src={`https://www.youtube.com/embed/${promoVideo.resourceId.videoId}?modestbranding=1`}
                 title={promoVideo.title}
@@ -68,7 +67,7 @@ class Media extends Component {
               index={index}
               onClick={event => this.switch(event)}
             >
-              <img src={video.thumbnails.medium.url} width="330" alt="thumbnail" />
+              <img src={video.thumbnails.medium.url} width="330" alt="" />
               <p>{ video.title }</p>
             </div>
           ))}

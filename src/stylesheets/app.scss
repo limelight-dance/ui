@@ -3,9 +3,16 @@
   src: url('../../static/Proxima Nova Regular.ttf');
 }
 
+@import "about";
+@import "crew";
+@import "footer";
+@import "media";
+@import "navbar";
+@import "error";
+
 body {
-  font-family: "Proxima Nova";
   margin: 0;
+  font-family: "Proxima Nova";
 }
 
 h1 {
@@ -14,8 +21,8 @@ h1 {
 }
 
 p {
-  line-height: 2em;
   font-size: 16px;
+  line-height: 2em;
 }
 
 a {

@@ -30,7 +30,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="single-column">
+      <div className="contact-page">
         <h1>Contact</h1>
         <form onSubmit={this.send}>
           <input onChange={this.updateEmail} placeholder="Email" />
