@@ -2,7 +2,8 @@
 Limelight website
 
 ### Requirements
-- Node.js
+* Node.js
+* Yarn
 
 ### Installing
 Create and populate `.env` file
