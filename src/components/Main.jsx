@@ -1,8 +1,8 @@
 import React from 'react'
 
-function About() {
+function Main() {
   return (
-    <div className="about-page">
+    <div className="main-page">
       <div className="cover">
         <div className="img-container">
           <img src="https://cdn.kevinchik.me/logo-white.png" alt="" />
@@ -56,4 +56,4 @@ function About() {
   )
 }
 
-export default About
+export default Main

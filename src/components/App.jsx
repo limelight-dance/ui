@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './Navbar.jsx'
-import About from './About.jsx'
+import Main from './Main.jsx'
 import Media from './Media.jsx'
 import Crew from './Crew.jsx'
 import Contact from './Contact.jsx'
@@ -14,7 +14,7 @@ function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={About} />
+          <Route path="/" exact component={Main} />
           <Route path="/media" component={Media} />
           <Route path="/crew" component={Crew} />
           <Route path="/contact" component={Contact} />
