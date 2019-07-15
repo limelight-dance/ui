@@ -15,7 +15,7 @@ Install packages (do **NOT** use `npm install`) and start
 ```
 yarn
 
-npm start
+yarn start
 ```
 
 ### Deploying
