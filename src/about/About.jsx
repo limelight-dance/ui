@@ -1,6 +1,5 @@
-/* eslint-disable global-require */
 import React from 'react'
-import './About.sass'
+import './About.scss'
 import content from './content.json'
 
 export default () => (

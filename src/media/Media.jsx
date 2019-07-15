@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Media.sass'
+import './Media.scss'
 
 class Media extends Component {
   constructor(props) {

@@ -1,7 +1,6 @@
-/* eslint-disable global-require */
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Navbar.sass'
+import './Navbar.scss'
 
 export default () => (
   <div className="navbar">

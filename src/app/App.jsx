@@ -7,7 +7,7 @@ import Crew from '../crew/Crew.jsx'
 import Contact from '../contact/Contact.jsx'
 import NotFound from '../not_found/NotFound.jsx'
 import Footer from '../shared/Footer.jsx'
-import './App.sass'
+import './App.scss'
 
 export default () => (
   <Router>

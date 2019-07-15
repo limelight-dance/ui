@@ -1,0 +1,39 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+
+  img {
+    position: absolute;
+    height: 40px;
+    padding: 15px;
+  }
+
+  .links {
+    margin: 5px 15px 0 auto;
+
+    a {
+      display: inline-block;
+      margin: 25px 20px;
+      color: #666;
+      font-size: 18px;
+
+      &:hover {
+        color: #aaa;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    img {
+      display: none;
+    }
+
+    .links {
+      margin: auto;
+    }
+  }
+}

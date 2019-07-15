@@ -13,7 +13,7 @@ module.exports = {
         use: { loader: 'html-loader' },
       },
       {
-        test: /\.sass$/,
+        test: /\.scss$/,
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
@@ -21,7 +21,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(ttf|jpg|png)$/,
+        test: /\.(ttf)$/,
         use: { loader: 'file-loader' },
       },
     ],

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.sass'
+import './Footer.scss'
 
 export default () => (
   <div className="footer">

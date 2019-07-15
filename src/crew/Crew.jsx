@@ -1,5 +1,5 @@
 import React from 'react'
-import './Crew.sass'
+import './Crew.scss'
 import content from './content.json'
 
 export default () => (
