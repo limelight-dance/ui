@@ -1,7 +1,9 @@
 {
   "license": "ISC",
   "scripts": {
-    "start": "webpack-dev-server --host 0.0.0.0 --disable-host-check"
+    "dev": "webpack-dev-server --host 0.0.0.0 --disable-host-check",
+    "start": "node dist/main.js",
+    "heroku-postbuild": "webpack -p"
   },
   "dependencies": {
     "@babel/core": "^7.4.4",
