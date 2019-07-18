@@ -1,5 +1,5 @@
 # Limelight Frontend
-Limelight website
+Website for Limelight Dance Crew.
 
 ### Requirements
 * Node.js

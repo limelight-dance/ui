@@ -10,27 +10,29 @@ class Media extends Component {
   }
 
   componentDidMount() {
+    this.getVideos()
+  }
+
+  // GET latest 20 videos in the Limelight Covers playlist
+  getVideos() {
     const params = {
       key: process.env.YOUTUBE_API,
       part: 'snippet',
       playlistId: process.env.PLAYLIST_ID,
       maxResults: 20,
     }
+    const url = 'https://www.googleapis.com/youtube/v3/playlistItems?'.concat(
+      Object.keys(params).map(param => `${param}=${params[param]}`).join('&'),
+    )
 
-    const url = 'https://www.googleapis.com/youtube/v3/playlistItems?'
-      .concat(Object.keys(params)
-        .map(param => `${param}=${params[param]}`)
-        .join('&'))
-
-    fetch(url)
-      .then(res => res.json())
-      .then((data) => {
-        this.setState({
-          videos: data.items.map(item => item.snippet).filter(item => item.thumbnails),
-        })
+    fetch(url).then(res => res.json()).then((data) => {
+      this.setState({
+        videos: data.items.map(item => item.snippet).filter(item => item.thumbnails),
       })
+    })
   }
 
+  // Replace the promo video with the selected video
   switch(event) {
     this.setState({
       promo: event.target.parentElement.getAttribute('index'),

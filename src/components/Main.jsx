@@ -5,7 +5,7 @@ function Main() {
     <div className="main-page">
       <div className="cover">
         <div className="img-container">
-          <img src="https://cdn.kevinchik.me/logo-white.png" alt="" />
+          <img src="https://cdn.kevinchik.me/limelight/logo_white.png" alt="" />
         </div>
       </div>
 

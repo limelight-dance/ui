@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <div className="navbar">
-      <Link to="/"><img src="https://cdn.kevinchik.me/logo.png" alt="" /></Link>
+      <Link to="/"><img src="https://cdn.kevinchik.me/limelight/logo.png" alt="" /></Link>
       &nbsp;
       <div>
         <Link to="/">About</Link>
