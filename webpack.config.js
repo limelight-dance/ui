@@ -20,16 +20,7 @@ module.exports = {
           { loader: 'sass-loader' },
         ],
       },
-      {
-        test: /\.(ttf)$/,
-        use: { loader: 'file-loader' },
-      },
     ],
-  },
-  devServer: {
-    host: '0.0.0.0',
-    port: process.env.PORT,
-    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebPackPlugin({
@@ -37,4 +28,7 @@ module.exports = {
       filename: './index.html',
     }),
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
 }

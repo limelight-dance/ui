@@ -11,11 +11,11 @@ Create and populate `.env` file
 cp .env.template .env
 ```
 
-Install packages (do **NOT** use `npm install`) and start
+Install packages (do **not** use `npm install`) and start
 ```
 yarn
 
-yarn start
+yarn run dev
 ```
 
 ### Deploying
